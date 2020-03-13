@@ -1,0 +1,71 @@
+# Compiled Python Files
+*.pyc
+
+# MacOS Residuals
+.DS_Store
+Desktop.ini
+.LSOverride
+.AppleDouble
+
+# Thumbnails
+._*
+Thumbs.db
+
+# System Metadata Files
+.DocumentRevisions-V100
+.fseventsd
+.TempraryItems
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Secret Files
+.extra
+*.local
+.local/
+.aws/
+.swp
+*.swp
+.viminfo
+.log
+.less*
+.cfg
+*.local
+.bin/
+.so
+.so*
+.ssh
+*.ssh/
+.ssh/*
+.ssh/
+.vim*
+.vim/*
+*.vim
+.swp
+
+# Compiled C++
+*.out
+
+# Compiled Python
+*.pyc
+
+# Files on Shared Drives
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+/log
+.git/
+.env
+/node_modules/
+/tmp
+/vendor
+db/*.sqlite3
+log/*.log
+tagds
+tmp/**/*
+.bundle
+*.sw[nop]
