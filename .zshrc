@@ -18,6 +18,16 @@ setopt promptsubst
 setopt inc_append_history
 setopt hist_ignore_dups
 
+# Powerlevel9K
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir newline vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status time dir_writable)
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
+POWERLEVEL9K_CONTEXT_TEMPLATE='%n'
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
+POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+# POWERLEVEL9K_STATUS_VERBOSE=false
+
 # support colors in less
 export LESS_TERMCAP_mb=$'\E[01;31m'
 export LESS_TERMCAP_md=$'\E[01;31m'
@@ -29,21 +39,21 @@ export LESS_TERMCAP_us=$'\E[01;32m'
 export LESSHISTFILE=/dev/null
 
 ## Command history configuration
-HISTFILE=$HOME/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=1000000
+HISTFILE='{$HOME}'/.zsh_history
+HISTSIZE=100000
+SAVEHIST=100000
 
 # zsh options
 setopt append_history
 setopt extended_history
 setopt hist_expire_dups_first
 # ignore duplication command history list
-setopt hist_ignore_dups 
+setopt hist_ignore_dups
 setopt hist_ignore_space
 setopt hist_verify
 setopt inc_append_history
 # share command history data
-setopt share_history 
+setopt share_history
 
 # ALIASES
 alias dl="cd $HOME/Downloads ; ls -lGaF"
