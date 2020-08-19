@@ -1,20 +1,25 @@
 {
 	"adaptive_dividers": true,
 	"allow_git_home_dir": false,
-	"always_show_minimap_viewport": true,
+	"always_show_minimap_viewport": false,
 	"animation_enabled": false,
 	"auto_complete": false,
+	"auto_complete_commit_on_tab": false,
+	"block_caret": false,
 	"bold_folder_labels": true,
-	"caret_extra_bottom": 1,
-	"caret_extra_top": 1,
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
 	"caret_extra_width": 1,
+	"caret_style": "solid",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/ayu/ayu-dark.sublime-color-scheme",
+	"color_scheme": "Packages/One Half Color Schemes/OneHalfDark.tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
+	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"drag_text": false,
-	"fade_fold_buttons": true,
+	"draw_indent_guides": true,
+	"fade_fold_buttons": false,
 	"file_exclude_patterns":
 	[
 		"*.pyc",
@@ -37,10 +42,9 @@
 		".DS_Store",
 		"*.class",
 		"*.psd",
-		"*.db",
-		"*.sublime-workspace"
+		"*.db"
 	],
-	"fin_selected_text": true,
+	"find_selected_text": true,
 	"fold_buttons": true,
 	"folder_exclude_patterns":
 	[
@@ -50,9 +54,8 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "Code New Roman",
+	"font_face": "CodeNewRoman NerdFont",
 	"font_size": 12,
-	"gpu_window_buffer": "false",
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
@@ -62,6 +65,11 @@
 	"indent_to_bracket": true,
 	"index_exclude_patterns":
 	[
+		"*.lock",
+		"*.csv",
+		"*.json",
+		"*.sql",
+		"*.tar*",
 		"Makefile",
 		"*.fseventsd",
 		"*.so",
@@ -70,19 +78,26 @@
 		".swp",
 		".DS_Store",
 		"*.Trashes",
-		"._*"
+		"._*",
+		"node_modules/**",
+		"vendor/**"
 	],
-	"margin": 2,
-	"native_tabs": "disabled",
+	"index_workers": 1,
+	"line_padding_bottom": 0,
+	"line_padding_top": 0,
+	"margin": 0,
+	"mini_diff": true,
 	"show_definitions": false,
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_git_status": true,
+	"show_minimap": false,
 	"show_navigation_bar": true,
 	"tab_completion": false,
-	"tab_size": 4,
+	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"use_tab_stop": true,
-	"word_wrap": "true"
+	"wide_caret": true,
+	"word_wrap": "false"
 }
