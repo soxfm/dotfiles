@@ -1,18 +1,17 @@
 {
 	"adaptive_dividers": true,
 	"allow_git_home_dir": false,
-	"always_show_minimap_viewport": false,
 	"animation_enabled": false,
-	"auto_complete": false,
 	"auto_complete_commit_on_tab": false,
+	"auto_match_enabled": true,
 	"block_caret": false,
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 2,
 	"caret_extra_top": 2,
-	"caret_extra_width": 1,
+	"caret_extra_width": 2,
 	"caret_style": "solid",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/One Half Color Schemes/OneHalfDark.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Frontend Delight/FrontEndDelightColorScheme.tmTheme",
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
 	"detect_indentation": true,
@@ -23,6 +22,7 @@
 	"file_exclude_patterns":
 	[
 		"*.pyc",
+		"*.git",
 		"*.pyo",
 		"*.exe",
 		"*.dll",
@@ -54,12 +54,13 @@
 		".hg",
 		"CVS"
 	],
-	"font_face": "CodeNewRoman NerdFont",
-	"font_size": 12,
+	"font_face": "CodeNewRoman Nerd Font Book",
+	"font_size": 11,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
+		"Markdown",
 		"Vintage"
 	],
 	"indent_to_bracket": true,
@@ -85,19 +86,35 @@
 	"index_workers": 1,
 	"line_padding_bottom": 0,
 	"line_padding_top": 0,
-	"margin": 0,
+	"margin": 2,
+	"match_brackets": true,
+	"match_brackets_angle": false,
+	"match_brackets_braces": true,
+	"match_brackets_content": true,
+	"match_brackets_square": true,
 	"mini_diff": true,
+	"new_window_settings":
+	{
+		"hide_open_files": true,
+		"show_tabs": true,
+		"side_bar_visible": true,
+		"status_bar_visible": true
+	},
 	"show_definitions": false,
 	"show_encoding": true,
 	"show_full_path": true,
 	"show_git_status": true,
-	"show_minimap": false,
+	"show_minimap": true,
 	"show_navigation_bar": true,
 	"tab_completion": false,
 	"tab_size": 2,
 	"theme": "Adaptive.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
+	"ui_native_titlebar": false,
+	"ui_separator": true,
+	"ui_wide_scrollbars": true,
+	"use_simple_full_screen": true,
 	"use_tab_stop": true,
 	"wide_caret": true,
-	"word_wrap": "false"
+	"word_wrap": "true"
 }
