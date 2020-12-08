@@ -17,6 +17,7 @@ fi
 
 # Custom ls command
 alias ls='lsd'
+alias git='/usr/local/bin/git'
 
 # support colors in less
 # improved less option
@@ -62,10 +63,10 @@ setopt hash_all
 
 # ALIASES
 
-alias l='ls -1A'
-alias ll='ls -lhAF '
-alias la='ls -A'
-# alias tree='lsd -1A --tre --group-dirs first -I=.DS_Store'
+alias l='lsd --group-dirs first -1AF'
+alias ll='lsd --group-dirs first -lhAF'
+alias la='lsd --group-dirs first -AF'
+alias tree='lsd -1A --tre --group-dirs first -I=.DS_Store'
 
 alias mv='mv -iv'
 alias cp='cp -iv'
@@ -83,7 +84,6 @@ alias reload="exec ${SHELL} -l"
 alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
 alias zshdir='cd /Users/soxfm/.zprezto'
 alias brewit="brew update -v ; brew upgrade -v ; brew cleanup ; brew dr"
-alias ytdl='youtube-dl --format "bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio" --merge-output-format mp4 --output "~/Downloads/%(id)s.%(ext)s"'
 alias ytdla='youtube-dl --extract-audio --audio-format mp3 --output "~/Downloads/%(id)s.%(ext)s"'
 
 ## FUNCTIONS
@@ -133,6 +133,3 @@ export HOMEBREW_CASK_OPTS=--require-sha
 
 # LS COLORS terminal output
 export LS_COLORS="$(vivid -m 8-bit generate molokai)"
-
-# PATHS
-export PATH="/usr/local/opt/python@3.9/bin:$PATH"
